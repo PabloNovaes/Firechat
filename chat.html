@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" class="document">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="./styles/chat.css">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <title>Firechat</title>
+
+</head>
+
+
+<body>
+    <div class="chat">
+        <header>
+            <button id="logoutBtn">
+                <i class="ph-fill ph-sign-out"></i>
+                <p>Sair</p>
+            </button>
+
+            <div id="switch">
+                <button></button>
+                <span></span>
+            </div>
+
+        </header>
+        <main id="chat-space">
+            <h4 id="info">Ainda não há mensagens <i class="ph-fill ph-smiley-sad"></i> </h4>
+        </main>
+
+        <div class="input">
+            <input id="text" type="text" placeholder="Mensagem">
+            <button onclick="sendMessage()"> <i class="ph-fill ph-paper-plane-right"></i> </button>
+        </div>
+    </div>
+
+    <script>
+
+        const page = document.querySelector('.document')
+        const btn = document.getElementById('switch');
+
+        btn.addEventListener("click", light);
+
+        function light() {
+            page.classList.toggle('light');
+        }
+    </script>
+
+
+    <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-database-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.1.0/firebase-auth-compat.js"></script>
+    <script src="./services/config.js"></script>
+    <script src="./services/chat.js"></script>
+
+</body>
+
+</html>
