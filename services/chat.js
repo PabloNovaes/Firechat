@@ -5,7 +5,7 @@ const auth = firebase.auth()
 const input = document.getElementById('text')
 const main = document.querySelector('main')
 const notMessage = document.getElementById('info')
-const chatId = 'qvdKm68KEZG93ahakotl'
+const chatId = 'nnEkC5cCIorNTijbvmUU'
 
 
 
