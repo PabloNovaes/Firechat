@@ -4,7 +4,7 @@ const db = firebase.firestore()
 const auth = firebase.auth()
 const input = document.getElementById('text')
 const main = document.querySelector('main')
-const notMessage = document.getElementById('info')
+const notMessage = document.getElementById('notMessage')
 const chatId = 'nnEkC5cCIorNTijbvmUU'
 
 
