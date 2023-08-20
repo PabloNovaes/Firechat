@@ -25,7 +25,7 @@ db.collection('chats').doc(chatId).onSnapshot((doc) => {
 
 async function getData(data) {
     if (data.length == 0) {
-        notMessage.style.display = 'block'
+        notMessage.style.display = 'flex'
     }
     if (data.length != 0) {
         main.innerHTML = ''
